@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PokéODS</title>
+    
+    <!--LOGO NA ABA-->
+    <link rel="icon" href="./assets/image/logogengar.png" type="image/png">
+
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--HEADER-->
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">PokéODS</h1>
+
+            <nav>
+                <a href="#home">Inicio</a>
+                <a href="#ods">ODS</a>
+                <a href="#about">Sobre</a>
+            </nav>
+
+            <button class="btn-primary">QUIZ</button>
+        </div>
+    </header>
+
+    <!--HERO-->
+    <section id="home" class="hero">
+        <div class="conteudo-hero">
+            <h2>QUAL POKÉMON REPRESENTA SEU IMPACTO NO MUNDO</h2>
+            <p>Um quiz interativo baseado nos Objetivos de Desenvolvimento Sustentável da ONU</p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">FAZER QUIZ</button>
+                <button class="btn-secondary">CONHECER ODS</button>
+            </div>
+        </div>
+    </section>
+
+    <!--ODS CARTAS-->
+    <section id="ods" class="secao-ods">
+        <div class="conteudo-ods">
+            <h2>EXPLORE OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</h2>
+            <p>Conheça os pokémons que representam cada ODS</p>
+
+            <div class="ods-orientecao">
+                <p>arraste para o lado</p>
+                <p>clique nas cartas</p>
+            </div>
+
+    <!--CARROSSEL DAS CARTAS-->
+            <div class="carrossel-cartas">
+
+    <!--ODS 1-->
+                <div class="card">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--QUIZ-->
+    <section id="quiz" class="fazer-quiz">
+        <div class="conteudo-quiz">
+            <h2>DESCUBRA O SEU POKÉMON</h2>
+            <p>Responda algumas perguntas rápidas e veja qual ODS está mais ligado a você</p>
+        </div>
+
+        <div class="quiz-orientacao">
+            <p>1 - Responda ao quiz <br>perguntas simples sobre suas escolhas e hábitos</p>
+            <p>2 - Analisamos seu perfil <br>Suas respostas são associadas as ODS</p>
+            <p>3 - Descubra seu resultado <br>Um pokémon revela seu impacto no mundo</p>
+        </div>
+
+    <!--SEÇAO UNICA DO BOTAO CTA - PERGUNTAS > RESPOSTAS > RESULTADO-->
+
+    <!--BOTAO CTA-->
+        <div class="quiz-start"> 
+            <button>FAZER QUIZ</button>
+        </div>
+
+    <!--PERGUNTAS DEPOIS DE CLICAR NO BOTAO CTA-->
+        <div class="quiz-question" style="display: none;"></div>    
+
+    <!--RESULTADO DEPOIS DE RESPONDER AS PERGUNTAS-->
+        <div class="quiz-result" style="display: none;"></div>
+
+    <!--SOBRE-->
+    <section id="about" class="sobre-projeto">
+        <div class="container">
+            <h2>SOBRE O PROJETO</h2>
+            <p>Este site é um projeto educacional que utiliza um quiz interativo para relacionar os Objetivos de Desenvolvimento Sustentável a personagens do universo Pokémon, incentivando a reflexão sobre o impacto social e ambiental de forma acessível e envolvente. <br>
+
+            Os Objetivos de Desenvolvimento Sustentável são uma iniciativa global da ONU para promover um futuro mais justo, sustentável e equilibrado até 2030.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="sobre-mim">
+            <aside>Levi Cassio 2026 github</aside>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>PokéODS</title>
     
-    <!--LOGO NA ABA-->
+    <!--LOGO NA ABA DO NAVEGADOR-->
     <link rel="icon" href="./assets/image/logogengar.png" type="image/png">
 
     <!--FONTE-->
@@ -14,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap">
 
-    <!--CSS-->
+    <!--CSS - ESTILOS-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,13 +23,14 @@
         <div class="container header-content">
             <h1 class="logo">PokéODS</h1>
 
-            <nav>
+            <nav aria-label="menu principal">
                 <a href="#home">Inicio</a>
                 <a href="#ods">ODS</a>
                 <a href="#about">Sobre</a>
             </nav>
-
-            <button class="btn-primary">QUIZ</button>
+    
+    <!--BOTAO CTA-->
+            <a href="#quiz" class="btn-primary">QUIZ</a>
         </div>
     </header>
 
@@ -41,8 +41,8 @@
             <p>Um quiz interativo baseado nos Objetivos de Desenvolvimento Sustentável da ONU</p>
 
             <div class="hero-buttons">
-                <button class="btn-primary">FAZER QUIZ</button>
-                <button class="btn-secondary">CONHECER ODS</button>
+                <a href="#quiz" class="btn-primary">FAZER QUIZ</a>
+                <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" class="btn-secondary">CONHECER ODS</a>
             </div>
         </div>
     </section>
@@ -53,29 +53,268 @@
             <h2>EXPLORE OS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</h2>
             <p>Conheça os pokémons que representam cada ODS</p>
 
-            <div class="ods-orientecao">
+            <div class="ods-orientecao" aria-label="instruções de interação">
                 <p>arraste para o lado</p>
                 <p>clique nas cartas</p>
             </div>
 
     <!--CARROSSEL DAS CARTAS-->
-            <div class="carrossel-cartas">
+            <div class="carrossel-cartas" role="list">
 
     <!--ODS 1-->
-                <div class="card">
+                <div class="card" role="listitem" aria-label="ODS 1">
                     <div class="card-inner">
 
                         <div class="card-front">
-                            <img src="" alt="">
+                            <img src="./assets/image/card01front.png" alt="card-front-ods01">
                         </div>
 
                         <div class="card-back">
-                            <img src="" alt="">
+                            <img src="./assets/image/card01back.png" alt="card-back-meowth">
+                        </div>
+                        
+                    </div>
+                </div>
+
+    <!--ODS 2-->
+                <div class="card" role="listitem" aria-label="ODS 2">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card02front.png" alt="card-front-ods02">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card02back.png" alt="card-back-milktank">
                         </div>
 
                     </div>
                 </div>
 
+    <!--ODS 3-->
+                <div class="card" role="listitem" aria-label="ODS 3">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card03front.png" alt="card-front-ods03">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card03back.png" alt="card-back-chansey">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 4-->
+                <div class="card" role="listitem" aria-label="ODS 4">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card04front.png" alt="card-front-ods04">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card04back.png" alt="card-back-alakazam">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 5-->
+                <div class="card" role="listitem" aria-label="ODS 5">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card05front.png" alt="card-front-ods05">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card05back.png" alt="card-back-vespiquen">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 6-->
+                <div class="card" role="listitem" aria-label="ODS 6">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card06front.png" alt="card-front-ods06">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card06back.png" alt="card-back-suicune">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 7-->
+                <div class="card" role="listitem" aria-label="ODS 7">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card07front.png" alt="card-front-ods07">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card07back.png" alt="card-back-ampharos">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 8-->
+                <div class="card" role="listitem" aria-label="ODS 8">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card08front.png" alt="card-front-ods08">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card08back.png" alt="card-back-conkeldurr">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 9-->
+                <div class="card" role="listitem" aria-label="ODS 9">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card09front.png" alt="card-front-ods09">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card09back.png" alt="card-back-porygon">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 10-->
+                <div class="card" role="listitem" aria-label="ODS 10">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card10front.png" alt="card-front-ods10">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card10back.png" alt="card-back-lucario">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 11-->
+                <div class="card" role="listitem" aria-label="ODS 11">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card11front.png" alt="card-front-ods11">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card11back.png" alt="card-back-palafin">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 12-->
+                <div class="card" role="listitem" aria-label="ODS 12">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card12front.png" alt="card-front-ods12">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card12back.png" alt="card-back-garbodor">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 13-->
+                <div class="card" role="listitem" aria-label="ODS 13">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card13front.png" alt="card-front-ods13">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card13back.png" alt="card-back-rayquaza">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 14-->
+                <div class="card" role="listitem" aria-label="ODS 14">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card14front.png" alt="card-front-ods14">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card14back.png" alt="card-back-lapras">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 15-->
+                <div class="card" role="listitem" aria-label="ODS 15">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card15front.png" alt="card-front-ods15">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card15back.png" alt="card-back-shaymin">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 16-->
+                <div class="card" role="listitem" aria-label="ODS 16">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card16front.png" alt="card-front-ods16">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card16back.png" alt="card-back-cobalion">
+                        </div>
+
+                    </div>
+                </div>
+
+    <!--ODS 17-->
+                <div class="card" role="listitem" aria-label="ODS 17">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <img src="./assets/image/card17front.png" alt="card-front-ods17">
+                        </div>
+
+                        <div class="card-back">
+                            <img src="./assets/image/card17back.png" alt="card-back-eevee">
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -88,24 +327,26 @@
             <p>Responda algumas perguntas rápidas e veja qual ODS está mais ligado a você</p>
         </div>
 
-        <div class="quiz-orientacao">
-            <p>1 - Responda ao quiz <br>perguntas simples sobre suas escolhas e hábitos</p>
-            <p>2 - Analisamos seu perfil <br>Suas respostas são associadas as ODS</p>
-            <p>3 - Descubra seu resultado <br>Um pokémon revela seu impacto no mundo</p>
+        <div class="quiz-orientacao" aria-label="como funciona o quiz">
+            <p><strong>1 - Responda ao quiz</strong><br>perguntas simples sobre suas escolhas e hábitos</p>
+            <p><strong>2 - Analisamos seu perfil</strong><br>Suas respostas são associadas as ODS</p>
+            <p><strong>3 - Descubra seu resultado</strong><br>Um pokémon revela seu impacto no mundo</p>
         </div>
 
     <!--SEÇAO UNICA DO BOTAO CTA - PERGUNTAS > RESPOSTAS > RESULTADO-->
 
-    <!--BOTAO CTA-->
-        <div class="quiz-start"> 
-            <button>FAZER QUIZ</button>
+    <!--ESTADO 1: Botão de inicio-->
+        <div class="quiz-start" id="quiz-start"> 
+            <button class="btn-primary" id="btn-iniciar-quiz" aria-label="iniciar o quiz">FAZER QUIZ</button>
         </div>
 
-    <!--PERGUNTAS DEPOIS DE CLICAR NO BOTAO CTA-->
-        <div class="quiz-question" style="display: none;"></div>    
+    <!--ESTADO 2: Perguntas do quiz-->
+        <div class="quiz-question hidden" id="quiz-question" aria-live="polite"></div>    
 
-    <!--RESULTADO DEPOIS DE RESPONDER AS PERGUNTAS-->
-        <div class="quiz-result" style="display: none;"></div>
+    <!--ESTADO 3: Resultado final-->
+        <div class="quiz-result hidden" id="quiz-result" aria-live="polite"></div>
+
+    </section>
 
     <!--SOBRE-->
     <section id="about" class="sobre-projeto">
@@ -120,7 +361,7 @@
     <!--FOOTER-->
     <footer>
         <div class="sobre-mim">
-            <aside>Levi Cassio 2026 github</aside>
+            <p>Levi Cassio &copy; 2026 <a href="https://github.com/levicassio" target="_blank" rel="noopener">GitHub</a></p>
         </div>
     </footer>
 

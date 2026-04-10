@@ -1,10 +1,64 @@
 * {
-    padding: 0;
+    padding: 40px;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --cor-primaria: #009EDB; 
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #EEFF00;
+    --cor-fundo: #000000;
+    --cor-texto: #ffffff;
+
+
+    --fonte-titulo: "Secular One", sans-serif;
+    --fonte-corpo: "Secular One", sans-serif;
+
+    --raio-borda: 25px;
 }
 
 body {
-    font-family: "Secular One", sans-serif;
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    color: var(--cor-secundaria);
+}
+
+.logo-poke {
+    color: var(--cor-terciaria);
+    padding: 0px;
+}
+
+h2 {
+    color: var(--cor-primaria);
+}
+
+.hidder {
+    display: none;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+}
+
+.btn-secondary {
+    color: var(--cor-secundaria);
+    background-color: transparent;
 }

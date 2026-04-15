@@ -1,9 +1,11 @@
+/* RESET */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Padding e border não aumentam o tamanho do elemento */
 }
 
+/* VARIÁVEIS GLOBAIS */
 :root {
     --cor-primaria: #009EDB; 
     --cor-secundaria: #ffffff;
@@ -18,6 +20,7 @@
     --raio-borda: 25px;
 }
 
+/* BASE */
 body {
     font-family: var(--fonte-corpo);
     background-color: var(--cor-fundo);
@@ -25,27 +28,27 @@ body {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+    display: block; /* Remove espaço extra que a imagem tem */
+    max-width: 100%; /* Impede a imagem de vazar o container */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do elemento pai*/
 }
 
+/* LOGO */
 .logo {
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria); /* "ODS" em branco */
 }
 
 .logo-poke {
-    color: var(--cor-terciaria);
-    padding: 0px;
+    color: var(--cor-terciaria); /* "Poké em amarelo */
 }
 
+/* TIPOGRAFIA */
 h2 {
-    color: var(--cor-primaria);
+    color: var(--cor-primaria); 
     font-size: 48px;
 }
 
@@ -53,19 +56,22 @@ p {
     font-size: 24px;
 }
 
+/* CONTROLA A VISIBILIDADE DOS ESTADOS DO QUIZ JAVASCRIPT */
 .hidden {
-    display: none;
+    display: none; 
 }
 
+/* CENTRALIZA O CONTEÚDO E LIMITA A LARGURA MÁXIMA DA PÁGINA */
 .container {
     max-width: 1360px;
     margin: 0 auto;
 }
 
+/* BOTÕES */
 .btn-primary {
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria); 
     background-color: var(--cor-primaria);
-    border-radius: 25px;
+    border-radius: var(--raio-borda);
     padding: 15px;
     
 }
@@ -73,66 +79,67 @@ p {
 .btn-secondary {
     color: var(--cor-secundaria);
     background-color: transparent;
-    border-radius: 25px;
-    border: 2px solid var(--cor-secundaria);
+    border-radius: var(--raio-borda);
+    border: 2px solid var(--cor-primaria);
     padding: 12px;
 }
 
+/* HEADER */
 header {
-    position: fixed;
-    top: 0;
-    left: -3%;
+    position: fixed; /* sai do fluxo e flutua sobre a página */
+    top: 0; /* gruda no topo da janela */
+    left: -3%;  /* ajuste visual de alinhamento */
     width: 100%;
-    z-index: 100;
+    z-index: 100; /* fica na frente de todos os outros elementos */
     padding: 16px;
     font-size: 24px;
 }
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+    align-items: center; /* alinha logo, nav e botão verticalmente */
+    justify-content: space-between; /* distribui os itens nas extremidades */
 }
 
 nav {
     display: flex;
-    gap: 24px;
+    gap: 24px; /* espaço entre os links de navegação */
 }
 
+/* HERO */
 .hero {
-    position: relative;
+    position: relative; /* necessário para o ::before funcionar como overlay */
     background-image: url(./assets/image/heroimagepokeods.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 100vh;
+    background-size: cover; /* imagem cobre toda a área sem distorcer */
+    height: 100vh; /* ocupa a altura total da janela */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
 }
 
-.hero::before {
-    content: "" ;
+.hero::before { /* overlay escuro sobre a imagem de fundo */
+    content: "" ; /* obrigatório para pseudo-elementos aparecerem */
     position:absolute;
-    inset: 0;
+    inset: 0; /* atalho para top/right/bottom/left: 0 */
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    z-index: 0; /* fica atrás do conteúdo */
 }
 
 .conteudo-hero {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* fica na frente do overlay */
     display: flex;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* empilha h2, p e botões verticalmente */
+    align-items: center; /* centraliza horizontalmente */
     gap: 100px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 200px;
-    margin-top: 100px;
+    gap: 200px; /* espaço entre os botões */
+    margin-top: 100px; /* espaço acima dos botões */
     font-size: 150%;
 }
